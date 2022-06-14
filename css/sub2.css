@@ -1,0 +1,399 @@
+@import url(common.css);
+@import url(font.css);
+@import url(header.css);
+@import url(footer.css);
+
+body{
+  width:100%;
+  height:100%;
+  background:#fff;
+}
+
+/* mainvisual */
+
+.mainvisual{
+  margin:5% auto;
+  position:relative;
+}
+
+.mainvisual img{
+  width:100%;
+  height:280px;
+  filter:grayscale(0.2);
+}
+
+.mainvisual_text{
+  position:absolute;
+  bottom:10%;
+  left:5%;
+  font-family:'Dongle', sans-serif;
+  text-align:left;
+}
+
+.mainvisual_text p{
+  line-height:2.5rem;
+  color:rgb(255, 255, 255);
+}
+
+.mainvisual_text p:nth-of-type(1){
+  font-weight:600;
+  font-size:2rem;
+  text-shadow:1px 1px 1px rgba(206, 20, 20, 0.9);
+}
+
+.mainvisual_text p:nth-of-type(2){
+  font-weight:500;
+  font-size:2rem;
+  text-shadow:1px 1px 1px rgba(228, 198, 28, 0.9);
+}
+
+.mainvisual_text p:nth-of-type(3){
+  font-weight:500;
+  font-size:2.25rem;
+  text-shadow:4px 3px 1px rgb(24, 24, 24);
+}
+
+.mainvisual_text p:nth-of-type(4){
+  font-weight:500;
+  font-size:2.25rem;
+  text-shadow:4px 3px 1px rgb(24, 24, 24);
+}
+
+/* sub_title */
+
+.sub_title{
+  display:flex;
+  justify-content:end;
+  margin:10% 5% 5%;
+  color:#666;
+}
+
+.sub_title>h2{
+  text-align:center;
+  font-family:'Dongle', sans-serif;
+  font-size:1.75rem;
+  font-weight:300;
+  line-height:60px;
+  border-top:2px dotted #d4172F;
+  letter-spacing:2px;
+}
+
+.sub_title>h2 span{
+  font-size:1.75rem;
+  vertical-align:middle;
+}
+
+
+/* section1 */
+
+.section1_wrap{
+  width:94%;
+  padding:2% 2%;
+  margin:10% auto;
+  border:2px solid #d4172F;
+  padding-top:50px;
+}
+
+.section1{
+  width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+.section1>h2{
+  font-family:'Gowun Dodum', sans-serif;
+  font-size:1.375rem;
+  line-height:36px;
+  font-weight:500;
+  letter-spacing:1px;
+  color:#666;
+  border:2px solid #d4172F;
+  width:60%;
+  padding:3%;
+  margin:10px auto 50px;
+  text-align:center;
+}
+
+.tab_box{
+  margin:50px 0px 20px;
+}
+
+.tab{
+  width:100%;
+  display:flex;
+}
+
+.tab li{
+  width:23%;
+  height:60px;
+  box-sizing:border-box;
+  margin:1%;
+}
+
+.tab li a{
+  width:100%;
+  height:100%;
+  font-family:'Gowun Dodum', sans-serif;
+  font-size:1rem;
+  font-weight:500;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#fff;
+  border:1px solid #9c9c9c;
+  border-radius:10px;
+  color:#4b4b4b;
+}
+
+.tab li .tab_active{
+  background-color:#d4172F;
+  color:#fff;
+}
+
+.panel{
+  width:96%;
+  margin:20px auto 50px;
+  padding:2%;
+  background-color:rgba(255,255,255,0.4);
+  border:1px solid #afafaf;
+  box-sizing:border-box;
+}
+
+.panel>li{
+  width:100%;
+  height:100%;
+}
+
+.panel>li>div:not(.section1_content_first, .section1_content_last){
+  border:1px solid #afafaf;
+  box-sizing:border-box;
+  margin:4%;
+}
+
+.section1_content_first{
+  width:95%;
+  margin:4% auto;
+  padding:3% 1%;
+  border:1px solid #fbb901;
+  box-sizing:border-box;
+  text-align:center;
+}
+
+.section1_content_first p{
+  font-family:'Nanum Pen Script', cursive;
+  font-size:1.5rem;
+  line-height:2.25rem;
+  font-weight:300;
+  color:#555;
+  padding:2%;
+}
+
+.section1_content_first p strong{
+  font-size:1.75rem;
+  font-weight:500;
+  color:#444;
+}
+
+.section1_content_first p span{
+  font-size:2rem;
+  color:#fbb901;
+  vertical-align:middle;
+  padding-right:1%;
+}
+
+.tab_content img{
+  width:100%;
+  height:60%;
+}
+
+.sub2_1text{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1rem;
+  text-indent:10px;
+  line-height:1.75rem;
+  text-align:center;
+  width:100%;
+  height:20%;
+  background:#fff;
+  color:#3d3d3d;
+  padding:2% 5%;
+  box-sizing:border-box;
+}
+
+.sub2_1text strong{
+  color:#d4172F;
+  font-size:1.125rem;
+  font-weight:400;
+  padding:0% 1%;
+}
+
+.section1_content_last{
+  width:95%;
+  margin:4% auto;
+  padding:3% 1%;
+  border:1px solid #fbb901;
+  box-sizing:border-box;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.section1_content_last p:first-of-type{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1.125rem;
+  font-weight:300;
+  line-height:1.75rem;
+  color:#444;
+  padding:2%;
+}
+
+.section1_content_last p:first-of-type span{
+  font-size:2rem;
+  color:#fbb901;
+  vertical-align:middle;
+  padding-right:2%;
+}
+
+.section1_content_last p:last-of-type{
+  width:40%;
+  height:38px;
+  background-color:#d4172F;
+  color:#fff;
+  font-size:1.5rem;
+  line-height:38px;
+  border-radius:10px;
+  margin:2%;
+} 
+
+/* section2 */
+.section2{
+  width:94%;
+  padding:2% 2%;
+  margin:10% auto;
+  padding-top:50px;
+  border:2px solid #76c6cc;
+  box-sizing:border-box;
+}
+
+.section_inf{
+  width:100%;
+  font-family:'Gowun Dodum', sans-serif;
+  text-align:center;
+}
+
+.section_inf_text{
+  width:95%;
+  margin:0 auto;
+}
+
+.section_inf_text>h2{
+  font-family:'Gowun Dodum', sans-serif;
+  font-size:1.375rem;
+  line-height:36px;
+  font-weight:500;
+  letter-spacing:1px;
+  color:#666;
+  width:60%;
+  padding:3%;
+  margin:10px auto 20px;
+  text-align:center;
+  border:2px solid #76c6cc;
+  box-sizing:border-box;
+}
+
+.section_inf_text>p{
+  font-family:'Nanum Pen Script', cursive;
+  font-size:1.375rem;
+  font-weight:300;
+  line-height:1.75rem;
+  color:#555;
+  padding:1%;
+}
+
+.section_inf_text>p:nth-of-type(3){
+  font-size:1.5rem;
+  color:#d4172F;
+  padding-top:2%;
+}
+
+.section_inf_content>div{
+  width:85%;
+  margin:5% auto;
+  padding:3%;
+  border:2px solid rgb(206, 226, 152);
+  box-sizing:content-box;
+}
+
+.section_inf_content_img{
+  width:80%;
+  height:auto;
+  background-color:#fff;
+  margin:3% auto;
+ 
+}
+
+.section_inf_content div img{
+  width:60%;
+}
+
+.section_inf_content div p:first-of-type{
+  font-family:'Nanum Pen Script', cursive;
+  font-size:1.5rem;
+  font-weight:500;
+  color:#d4172F;
+  padding:3%;
+}
+
+.section_inf_content div p{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1rem;
+  font-weight:300;
+  line-height:1.5rem;
+  color:#444;
+}
+
+.section_inf_content div p:last-of-type{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1rem;
+  font-weight:400;
+  line-height:2rem;
+  color:#444;
+}
+
+.section_inf_content_last{
+  width:95%;
+  margin:0 auto 50px;
+  padding:3% 1%;
+  border:3px solid rgb(206, 226, 152);
+  text-align:left;
+  box-sizing: border-box;
+}
+
+.section_inf_content_last p{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1rem;
+  font-weight:300;
+  line-height:1.25rem;
+  color:#444;
+  padding:2%;
+}
+
+.section_inf_content_last p:nth-of-type(1), .section_inf_content_last p:nth-of-type(3){
+  font-family:'Nanum Pen Script', cursive;
+  font-size:1.25rem;
+  padding-bottom:10px; 
+}
+
+.section_inf_content_last p:nth-of-type(2){
+  padding-bottom:10px;
+}
+
+.section_inf_content_last p span{
+  font-size:1.5rem;
+  font-weight:400;
+  color:#d4172F;
+  vertical-align:bottom;
+  padding-right:2%;
+}

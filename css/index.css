@@ -1,0 +1,113 @@
+@import url(common.css);
+@import url(font.css);
+@import url(header.css);
+
+body{
+  width:100%;
+  height:100%;
+}
+
+/* 메인 비주얼(배경) */
+
+.gallery1{
+  overflow:hidden;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.swiper-wrapper .swiper-slide img{  /*가변이미지*/
+	width:100%; 
+  height:100%;
+}
+
+.main_visual li{
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:no-repeat fixed center center;
+  background-size:cover;
+  transition:all 4s;
+}
+
+/* 메인 비주얼 텍스트 */
+.main_text{
+  text-align:right;
+  position:fixed;
+  top:20%;
+  right:5%;
+  width:100%;
+  font-family:'Nanum Pen Script', cursive;
+  font-size:2.375rem;
+  color:rgb(251, 251, 251);
+  text-shadow:1px 3px 3px rgb(75, 75, 75);
+}
+
+/* 서브메뉴 이동창 */
+.sub_button{
+  position:fixed;
+  bottom:10%;
+  left:10%;
+  width:80%;
+  height:45%;
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows:50% 50%;
+  z-index:100;
+}
+
+.sub_button div{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.sub_button01{
+  background-color:#fbb901;
+  border-top-left-radius:40px;
+}
+
+.sub_button02{
+  background-color:#432160;
+  border-top-right-radius:40px;
+}
+
+.sub_button03{
+  background-color:#00a8b5;
+  border-bottom-left-radius:40px;
+}
+
+.sub_button04{
+  background-color:#d4172F;
+  border-bottom-right-radius:40px;
+}
+
+.sub_button p{
+  width:100%;
+  height:100%;
+  color:#fff;
+  font-family: 'Noto Sans', sans-serif;
+  font-size:1.5rem;
+  font-weight:400;
+  letter-spacing:1px;
+}
+
+@media screen and (min-width:600px){
+  .sub_button{
+    position:fixed;
+    bottom:10%;
+    left:25%;
+    width:50%;
+    height:45%;
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:50% 50%;
+    z-index:100;
+  }
+}

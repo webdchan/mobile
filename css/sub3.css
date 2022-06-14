@@ -1,0 +1,148 @@
+@import url(common.css);
+@import url(font.css);
+@import url(header.css);
+@import url(footer.css);
+
+body{
+  width:100%;
+  height:100%;
+  background:#fff;
+}
+
+/* mainvisual */
+
+.mainvisual{
+  margin:5% auto;
+  position:relative;
+}
+
+.mainvisual img{
+  width:100%;
+  height:280px;
+  filter:grayscale(0.4);
+}
+
+.mainvisual_text{
+  position:absolute;
+  bottom:8%;
+  right:8%;
+  font-family:'Dongle', sans-serif;
+  text-align:right;
+}
+
+.mainvisual_text p{
+  line-height:2.5rem;
+  color:rgb(255, 255, 255);
+}
+
+.mainvisual_text p:nth-of-type(1){
+  font-weight:600;
+  font-size:2rem;
+  text-shadow:1px 1px 1px rgba(206, 20, 20, 0.9);
+}
+
+.mainvisual_text p:nth-of-type(2){
+  font-weight:500;
+  font-size:2rem;
+  text-shadow:1px 1px 1px rgba(228, 198, 28, 0.9);
+}
+
+.mainvisual_text p:nth-of-type(3){
+  font-weight:500;
+  font-size:2.5rem;
+  text-shadow:4px 3px 1px rgb(24, 24, 24);
+}
+
+.mainvisual_text p:nth-of-type(4){
+  font-weight:500;
+  font-size:2.5rem;
+  text-shadow:4px 3px 1px rgb(24, 24, 24);
+}
+
+/* sub_title */
+
+.sub_title{
+  display:flex;
+  justify-content:end;
+  margin:10% 5% 5%;
+  color:#666;
+}
+
+.sub_title>h2{
+  text-align:center;
+  font-family:'Dongle', sans-serif;
+  font-size:1.75rem;
+  font-weight:300;
+  line-height:60px;
+  border-top:2px dotted #d4172F;
+  letter-spacing:2px;
+}
+
+.sub_title>h2 span{
+  font-size:1.75rem;
+  vertical-align:middle;
+}
+
+/* section */
+
+section{
+  width:94%;
+  padding:2% 2%;
+  margin:5% auto;
+}
+
+.swiper-container>h2{
+  font-family:'Noto Sans', sans-serif;
+  font-size:1.375rem;
+  line-height:36px;
+  font-weight:500;
+  letter-spacing:1px;
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  color:#666;
+  background-color:rgba(255,255,255,0.8);
+  text-align:center;
+  width:65%;
+  padding:2%;
+  margin:10px auto 30px;
+  box-sizing: border-box;
+}
+
+.content_text{
+  width:100%;
+  position:absolute;
+  padding:5% 3%;
+  box-sizing:border-box;
+  bottom:5%;
+  text-align:center;
+  background-color: #fff;
+}
+
+.content_text h4{
+  font-family:'Dongle', sans-serif;
+  font-size:40px;
+  font-size:1.75rem;
+  line-height:40px;
+  font-weight:600;
+  letter-spacing:4px;
+}
+
+.swiper-container:first-of-type .content_text h4{
+  color:#d4172F;
+}
+
+.swiper-container:last-of-type .content_text h4{
+  color:#432160;
+}
+
+.content_text h3{
+  font-family:'Noto Sans', sans-serif;
+  font-size:28px;
+  font-size:1.25rem;
+  line-height:40px;
+  font-weight:500;
+  color:#666;
+}
+
+
